@@ -1,0 +1,179 @@
+<%- include ("partials/header") -%>
+<main class="flex flex-col items-center h-full w-full absolute">
+    <div id="intro-section" class="h-fit w-fit">
+        <section>
+            <div class="text-container">
+                <h4>Given a string of numbers, this app will output the result as a text.</h4>
+                <section class="flex flex-col items-start" id="input-examples">
+                    <div id="example-1">
+                        <p class="text-xs">
+                            For example if your input is "22" you will get "b".
+                        </p>
+                        <p class="text-xs">
+                            input "222" = "c"
+                        </p>
+                        <p class="text-xs">
+                            input "2222" = "ca"
+                        </p>
+                        <p class="text-xs">
+                            777777 = "sq". 7717777 = "qs"
+                        </p>
+                    </div>
+                    <div id="input-notes">
+                        <p class="text-xs">
+                            "1" is used to separate letters with the same number.
+                        </p>
+                        <p class="text-xs">
+                            0 are spaces in the string.
+                        </p>
+                    </div>
+                </section>
+            </div>
+        </section>
+    </div>
+    <div class="items-end h-96 w-full flex justify-evenly relative mt-8" id="screen-container">
+        <section id="screen" class="bg-blue flex justify-center items-center border-double border-white border-2 h-full w-64">
+            <div class="h-fit w-fit bg-blue grid grid-rows-4 gap-4" id="grid-container">
+                <div class="grid grid-cols-3 gap-2 h-fit w-fit" id="row-1">
+                    <div class="m-1 flex justify-center items-center w-16 h-16 border-solid border-white border-2">
+                        <button class="btn flex flex-col justify-center items-center" type="button">
+                            <span class="h-fit w-fit">1</span>
+                            <span>»</span>
+                        </button>
+                    </div>
+                    <div class="m-1 flex justify-center items-center w-16 h-16 border-solid border-white border-2">
+                        <button class="btn flex flex-col justify-center items-center" type="button">
+                            <span class="h-fit w-fit">2</span>
+                            <div class="flex">
+                                <span>A</span>
+                                <span>B</span>
+                                <span>C</span>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="m-1 flex justify-center items-center w-16 h-16 border-solid border-white border-2">
+                        <button type="button" class="btn flex flex-col justify-center items-center">
+                            <span class="h-fit w-fit">3</span>
+                            <div class="flex">
+                                <span>D</span>
+                                <span>E</span>
+                                <span>F</span>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+                <div class="grid grid-cols-3 gap-2 h-fit w-fit" id="row-2">
+                    <div class="m-1 flex justify-center items-center w-16 h-16 border-solid border-white border-2">
+                        <button class="btn flex flex-col justify-center items-center" type="button">
+                            <span class="h-fit w-fit">4</span>
+                            <div class="flex">
+                                <span>G</span>
+                                <span>H</span>
+                                <span>I</span>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="m-1 flex justify-center items-center w-16 h-16 border-solid border-white border-2">
+                        <button type="button" class="btn flex flex-col justify-center items-center">
+                            <span class="h-fit w-fit">5</span>
+                            <div class="flex">
+                                <span>J</span>
+                                <span>K</span>
+                                <span>L</span>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="m-1 flex justify-center items-center w-16 h-16 border-solid border-white border-2">
+                        <button type="button" class="btn flex flex-col justify-center items-center">
+                            <span class="h-fit w-fit">6</span>
+                            <div class="flex">
+                                <span>M</span>
+                                <span>N</span>
+                                <span>O</span>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+                <div class="grid grid-cols-3 gap-2 h-fit w-fit" id="row-3">
+                    <div class="m-1 flex justify-center items-center w-16 h-16 border-solid border-white border-2">
+                        <button type="button" class="btn flex flex-col justify-center items-center">
+                            <span class="h-fit w-fit">7</span>
+                            <div class="flex">
+                                <span>P</span>
+                                <span>Q</span>
+                                <span>R</span>
+                                <span>S</span>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="m-1 flex justify-center items-center w-16 h-16 border-solid border-white border-2">
+                        <button type="button" class="btn flex flex-col justify-center items-center">
+                            <span class="h-fit w-fit">8</span>
+                            <div class="flex">
+                                <span>T</span>
+                                <span>U</span>
+                                <span>V</span>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="m-1 flex justify-center items-center w-16 h-16 border-solid border-white border-2">
+                        <button type="button" class="btn flex flex-col justify-center items-center">
+                            <span class="h-fit w-fit">9</span>
+                            <div class="flex">
+                                <span>W</span>
+                                <span>X</span>
+                                <span>Y</span>
+                                <span>Z</span>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+                <div class="grid grid-cols-3 gap-2 h-fit w-fit" id="row-4">
+                    <div class="m-1 flex justify-center items-center w-16 h-16 border-solid border-white border-2">
+                        <button type="button" class="" disabled>
+                            <span class="h-fit w-fit">*</span>
+                            <span>+</span>
+                        </button>
+                    </div>
+                    <div class="m-1 flex justify-center items-center w-16 h-16 border-solid border-white border-2">
+                        <button type="button" class="btn flex flex-col justify-center items-center">
+                            <span class="h-fit w-fit">0</span>
+                            <span>space</span>
+                        </button>
+                    </div>
+                    <div class="m-1 flex justify-center items-center w-16 h-16 border-solid border-white border-2">
+                        <button type="button" class="" disabled>
+                            <span class="h-fit w-fit" >#</span>
+                            <span>↑</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div id="result-display" class="flex bg-blue w-2/5 h-72 border-solid border-2 border-white relative">
+            <div id="wrapper" class=" absolute top-5 left-5 ">
+                <section class="flex flex-col h-full w-fit relative" id="display-screen">
+                    <div id="input" class="m-2 flex h-fit w-full justify-evenly">   
+                        <button type="submit" class="w-fit h-fit border-solid border-2 border-white" id="submitBtn">
+                            <span>
+                                get Result
+                            </span>
+                        </button>
+                        <h4>Input</h4>
+                    </div>
+                    <div class="flex justify-end items-center bg-dark w-72 h-8 border-solid border-2 border-white relative">
+                        <span class="absolute right-3" id="inputDisplay"></span>
+                        <input type="hidden" value="" id="hiddenInput">    
+                    </div>
+                    <div class="flex h-fit w-fit absolute top-28" id="result">
+                        <h4>Result:</h4>
+                        <div class="flex justify-start bg-dark w-full h-full border-solid border-2 border-white relative">
+                            <span>RESULT</span>    
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+</main>
+<%- include ("partials/footer") -%>
