@@ -13,9 +13,11 @@ app.get('/', (req, res) => {
 })
 
 app.post('/submitInput', (req, res) => {
-    console.log(numbersToText(req.body.data))
+    const r = numbersToText(req.body.data);
+    res.locals.result = r;
     res.status(200).json({
         message: 'ok',
+        result: r,
     })
 })
 
