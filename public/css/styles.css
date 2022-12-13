@@ -745,8 +745,3 @@ h1, h2, h3, h4, h5, p, span, label{
   font-size: 2.25rem;
   line-height: 2.5rem;
 }
-
-.text-white{
-  --tw-text-opacity: 1;
-  color: rgb(239 239 239 / var(--tw-text-opacity));
-}
